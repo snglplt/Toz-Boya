@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    >
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <!-- app:menu="@menu/activity_main_drawer"-->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/colorPrimaryDark"
+
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageprofil"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/profil"
+                app:shapeAppearance="@style/roundimage"
+                ></com.google.android.material.imageview.ShapeableImageView>
+
+            <TextView
+                android:id="@+id/txtad_soyad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#fff"></TextView>
+
+            <ExpandableListView
+                android:id="@+id/navigationmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"></ExpandableListView>
+        </LinearLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardHesaplama"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="20dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:id="@+id/linearHesaplama"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/txtHesaplama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="@string/hesaplama"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/poppings"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardRalKaldera"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/linearRalKaldera"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:gravity="center"
+
+                >
+                <TextView
+                    android:id="@+id/txtRalKaldera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="@string/ralkartelasi"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppings"
+                    android:gravity="center"/>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardBlog"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/linearlayoutBlog"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:gravity="center"
+
+
+                >
+                <TextView
+                    android:id="@+id/txtBlog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="@string/blog"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/poppings"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardBizeUlasin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/linearlayoutBizeUlasin"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:gravity="center"
+
+
+                >
+                <TextView
+                    android:id="@+id/txtBizeUlasin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="@string/bizeulasin"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppings"
+                    android:gravity="center"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- İlk kutu -->
+
+        <!-- İkinci kutu -->
+
+        <!-- Üçüncü kutu -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="16dp"
+            tools:context=".ui.MainActivity"
+            android:layout_gravity="center">
+
+            <!-- Facebook Icon -->
+            <ImageView
+                android:id="@+id/facebookIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_facebook"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:onClick="onFacebookClick"
+                />
+
+            <!-- Twitter Icon -->
+            <ImageView
+                android:id="@+id/twitterIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_twitter"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:onClick="onTwitterClick"
+                />
+
+            <!-- Instagram Icon -->
+            <ImageView
+                android:id="@+id/instagramIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_instagram"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:onClick="onInstagramClick"
+                />
+
+            <!-- LinkedIn Icon -->
+            <ImageView
+                android:id="@+id/linkedinIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_linkedin"
+                android:clickable="true"
+                android:onClick="onLinkedInClick"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="160dp"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:layout_marginTop="-65dp"
+            ></View>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

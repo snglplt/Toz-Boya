@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">TOZ BOYA</string>
+    <string name="dil_secimi">Dil Seçiniz</string>
+    <string name="turkce">Türkçe</string>
+    <string name="ingilizce">İngilizce</string>
+    <string name="almanca">Almanca</string>
+    <string name="rusca">Rusça</string>
+    <string name="ekle">Ekle</string>
+    <string name="email_address1">Email Adresi</string>
+    <string name="enter_password">Şifre</string>
+    <string name="sign_in">Giriş</string>
+    <string name="didn_t_have_any_account">Hesabım yok</string>
+    <string name="sign_up">Kayıt Ol</string>
+    <string name="hesaplama">Hesaplama</string>
+    <string name="ralkartelasi">Ral Kartelası</string>
+    <string name="blog">Blog</string>
+    <string name="bizeulasin">Bize Ulaşın</string>
+    <string name="geribildirim">Geri Bildirim</string>
+    <string name="logout">Çıkış</string>
+    <string name="cikis_yapisin_mi">Çıkış yapılsın mı?</string>
+    <string name="evet">Evet</string>
+    <string name="hayir">Hayır</string>
+    <string name="tozboya">Toz Boya</string>
+    <string name="tozboyanedir">Toz Boya Nedir?</string>
+    <string name="elektrostatik">1.Elektrostatik Uygulama</string>
+    <string name="tozboyantanim">Toz boya, genellikle bir elektrostatik uygulama sistemi kullanılarak metal ve bazı diğer yüzeylere uygulanan bir boya türüdür.
+        Toz boyanın özellikleri ve avantajları şunları içerir:</string>
+    <string name="elektrostatiktanim">Toz boya, genellikle bir elektrostatik tabanca veya makine aracılığıyla metal bir yüzeye püskürtülür. Bu işlemde, metal yüzey pozitif bir elektrik yüküne sahipken, toz boya negatif bir yük taşır.Bu, toz partiküllerinin yüzeye çekilmesini sağlar ve homojen bir kaplama oluşturur.</string>
+    <string name="verimlilik">2.Yüksek Verimlilik</string>
+    <string name="verimliliktanim">Elektrostatik uygulama sistemi sayesinde, toz boyanın metal yüzeye yapışma verimliliği oldukça yüksektir. Bu da daha az boya tüketimi ve daha düşük maliyet anlamına gelir.</string>
+    <string name="cevredostu">3.Çevre Dostu</string>
+    <string name="cevredostutanim">Toz boya, genellikle çözücü içermez ve VOC (Volatile Organic Compounds - Uçucu Organik Bileşenler) emisyonları daha düşüktür. Bu nedenle, çevre dostu bir boya seçeneği olarak kabul edilir.</string>
+    <string name="farklirenk">4.Farklı Renk Seçenekleri</string>
+    <string name="farklirenktanim">Toz boya, geniş bir renk yelpazesi sunar. Farklı pigmentlerin karışımıyla birçok renk tonu elde edilebilir.</string>
+    <string name="dayaniklilik">5.Dayanıklılık ve Kaplama Kalitesi</string>
+    <string name="dayanikliliktanim">Toz boya, genellikle dayanıklı bir kaplama sağlar ve metal yüzeylere iyi bir koruma sağlar. Ayrıca, pürüzsüz ve homojen bir yüzey kaplaması elde etmek için eğilimlidir.</string>
+</resources>

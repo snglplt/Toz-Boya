@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">TOZ BOYA</string>
+    <string name="dil_secimi">Sprache auswählen</string>
+    <string name="turkce">Türkisch</string>
+    <string name="ingilizce">Englisch</string>
+    <string name="almanca">Deutsch</string>
+    <string name="rusca">Russisch</string>
+    <string name="ekle">Hinzufügen</string>
+    <string name="email_address1">E-Mail-Adresse</string>
+    <string name="enter_password">Passwort</string>
+    <string name="sign_in">Eingang</string>
+    <string name="didn_t_have_any_account">Ich habe keinen Account</string>
+    <string name="sign_up">Registrieren</string>
+    <string name="hesaplama">Berechnung</string>
+    <string name="ralkartelasi">RAL-Karte</string>
+    <string name="blog">Blog</string>
+    <string name="bizeulasin">Kontaktiere uns</string>
+    <string name="geribildirim">Rückmeldung</string>
+    <string name="logout">Ausfahrt</string>
+    <string name="cikis_yapisin_mi">Abmelden?</string>
+    <string name="evet">Ja</string>
+    <string name="hayir">NEIN</string>
+    <string name="tozboya">Pulverlack</string>
+    <string name="tozboyanedir">Was ist Pulverbeschichtung?</string>
+    <string name="elektrostatik">1. Elektrostatische Anwendung</string>
+    <string name="tozboyantanim">Bei der Pulverbeschichtung handelt es sich um eine Art Farbe, die auf Metall und einige andere Oberflächen aufgetragen wird, normalerweise mithilfe eines elektrostatischen Auftragssystems.
+        Zu den Merkmalen und Vorteilen der Pulverbeschichtung gehören:</string>
+    <string name="elektrostatiktanim">Pulverbeschichtung wird auf eine Metalloberfläche gesprüht, normalerweise mit einer elektrostatischen Pistole oder Maschine. Bei diesem Verfahren ist die Metalloberfläche elektrisch positiv geladen, während die Pulverbeschichtung negativ geladen ist. Dadurch werden die Pulverpartikel von der Oberfläche angezogen und es entsteht eine homogene Beschichtung.</string>
+    <string name="verimlilik">2. Hohe Effizienz</string>
+    <string name="verimliliktanim">Dank des elektrostatischen Auftragssystems ist die Haftungseffizienz des Pulverlacks auf der Metalloberfläche recht hoch. Das bedeutet weniger Farbverbrauch und geringere Kosten.</string>
+    <string name="cevredostu">3. Umweltfreundlich</string>
+    <string name="cevredostutanim">Pulverbeschichtungen enthalten im Allgemeinen keine Lösungsmittel und weisen geringere VOC-Emissionen (flüchtige organische Verbindungen) auf. Daher gilt es als umweltfreundliche Farboption.</string>
+    <string name="farklirenk">4. Verschiedene Farboptionen</string>
+    <string name="farklirenktanim">Die Pulverbeschichtung bietet eine große Farbpalette. Durch das Mischen verschiedener Pigmente lassen sich viele Farbtöne erzielen.</string>
+    <string name="dayaniklilik">5.Haltbarkeit und Beschichtungsqualität</string>
+    <string name="dayanikliliktanim">Pulverbeschichtung sorgt im Allgemeinen für eine dauerhafte Oberfläche und bietet einen guten Schutz für Metalloberflächen. Darüber hinaus wird tendenziell eine glatte und gleichmäßige Oberflächenbeschaffenheit erzielt.</string>
+</resources>

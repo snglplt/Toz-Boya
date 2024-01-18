@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TOZ BOYA</string>
+    <string name="dil_secimi">Select Language</string>
+    <string name="turkce">Turkish</string>
+    <string name="ingilizce">English</string>
+    <string name="almanca">German</string>
+    <string name="rusca">Russian</string>
+    <string name="ekle">Add</string>
+    <string name="email_address1">E mail address</string>
+    <string name="enter_password">Password</string>
+    <string name="sign_in">Login</string>
+    <string name="didn_t_have_any_account">I do not have an account</string>
+    <string name="sign_up">Register</string>
+    <string name="hesaplama">Calculation</string>
+    <string name="ralkartelasi">RAL Chart</string>
+    <string name="blog">Blog</string>
+    <string name="bizeulasin">Contact Us</string>
+    <string name="geribildirim">Feedback</string>
+    <string name="logout">Logout</string>
+
+    <string name="cikis_yapisin_mi">Sign out?</string>
+    <string name="evet">Yes</string>
+    <string name="hayir">No</string>
+    <string name="tozboya">Powder paint</string>
+    <string name="tozboyanedir">What is Powder Coating?</string>
+    <string name="elektrostatik">1.Electrostatic Application</string>
+    <string name="tozboyantanim">Powder coating is a type of paint that is applied to metal and some other surfaces, usually using an electrostatic application system.
+        Features and advantages of powder coating include:</string>
+    <string name="elektrostatiktanim">Powder coating is sprayed onto a metal surface, usually via an electrostatic gun or machine. In this process, the metal surface has a positive electrical charge, while the powder coating carries a negative charge. This allows the powder particles to be attracted to the surface, creating a homogeneous coating.</string>
+    <string name="verimlilik">2.High Efficiency</string>
+    <string name="verimliliktanim">Thanks to the electrostatic application system, the adhesion efficiency of powder paint to the metal surface is quite high. This means less paint consumption and lower costs.</string>
+    <string name="cevredostu">3.Environmentally Friendly</string>
+    <string name="cevredostutanim">Powder coating generally does not contain solvents and has lower VOC (Volatile Organic Compounds) emissions. Therefore, it is considered an environmentally friendly paint option.</string>
+    <string name="farklirenk">4.Different Color Options</string>
+    <string name="farklirenktanim">Powder coating offers a wide range of colors. Many color tones can be achieved by mixing different pigments.</string>
+    <string name="dayaniklilik">5.Durability and Coating Quality</string>
+    <string name="dayanikliliktanim">Powder coating generally provides a durable finish and provides good protection to metal surfaces. Additionally, it tends to achieve a smooth and uniform surface finish.</string>
+
+</resources>
