@@ -44,17 +44,17 @@ class YedekExpandableListAdapter (
 
     override fun getChildrenCount(groupPosition: Int): Int {
         var childCount = 0
-       /* if (groupPosition != mListDataHeader.size-1) {
+        if (groupPosition != 4) {
             childCount = mListDataChild[mListDataHeader[groupPosition]]!!
                 .size
-        }*/
+        }
         return childCount
     }
 
     override fun getGroup(groupPosition: Int): Any {
         return mListDataHeader[groupPosition]
     }
-     fun getGroupName(groupPosition: Int): Any {
+    fun getGroupName(groupPosition: Int): Any {
         return mListDataHeader[groupPosition].getIconName()!!
     }
 
@@ -94,6 +94,7 @@ class YedekExpandableListAdapter (
             ?.findViewById(com.songul.tozboya.R.id.submenu) as TextView
         val headerIcon: ImageView = convertView?.findViewById(com.songul.tozboya.R.id.iconimage) as ImageView
         lblListHeader.setTypeface(null, Typeface.BOLD)
+        //lblListHeader.setTextColor(com.songul.tozboya.R.color.buton)
         lblListHeader.setText(headerTitle.getIconName())
         headerIcon.setImageResource(headerTitle.getIconImg())
         return convertView

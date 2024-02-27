@@ -21,17 +21,80 @@
     <string name="evet">Evet</string>
     <string name="hayir">Hayır</string>
     <string name="tozboya">Toz Boya</string>
-    <string name="tozboyanedir">Toz Boya Nedir?</string>
+    <string name="tozboyanedir">Toz Boya Nedir?Ya da elektrostatik toz boya nedir?</string>
     <string name="elektrostatik">1.Elektrostatik Uygulama</string>
-    <string name="tozboyantanim">Toz boya, genellikle bir elektrostatik uygulama sistemi kullanılarak metal ve bazı diğer yüzeylere uygulanan bir boya türüdür.
-        Toz boyanın özellikleri ve avantajları şunları içerir:</string>
-    <string name="elektrostatiktanim">Toz boya, genellikle bir elektrostatik tabanca veya makine aracılığıyla metal bir yüzeye püskürtülür. Bu işlemde, metal yüzey pozitif bir elektrik yüküne sahipken, toz boya negatif bir yük taşır.Bu, toz partiküllerinin yüzeye çekilmesini sağlar ve homojen bir kaplama oluşturur.</string>
+    <string name="tozboyantanim">Toz boya, genellikle bir elektrostatik uygulama sistemi kullanılarak özellikle metal ve bazı farklı yüzeylere, mesela MDF gibi, uygulanan bir boya türüdür. Toz boyanın özellikleri ve avantajları şunlardır:</string>
+    <string name="elektrostatiktanim">Toz boya, genellikle bir elektrostatik tabanca veya makine aracılığıyla metal bir yüzeye püskürtülür. Bu işlemde, metal yüzey pozitif bir elektrik yüküne sahipken, toz boya negatif bir yük taşır. Bu, toz partiküllerinin yüzeye çekilmesini sağlar ve homojen bir kaplama oluşturur. Boyanın eksi kutbuyla metalin artı kutbu birleşir ve metal önce toz ile kaplanmış olur.</string>
     <string name="verimlilik">2.Yüksek Verimlilik</string>
     <string name="verimliliktanim">Elektrostatik uygulama sistemi sayesinde, toz boyanın metal yüzeye yapışma verimliliği oldukça yüksektir. Bu da daha az boya tüketimi ve daha düşük maliyet anlamına gelir.</string>
     <string name="cevredostu">3.Çevre Dostu</string>
-    <string name="cevredostutanim">Toz boya, genellikle çözücü içermez ve VOC (Volatile Organic Compounds - Uçucu Organik Bileşenler) emisyonları daha düşüktür. Bu nedenle, çevre dostu bir boya seçeneği olarak kabul edilir.</string>
+    <string name="cevredostutanim">Toz boya, genellikle tiner gibi çözücüler içermez ve VOC (Volatile Organic Compounds - Uçucu Organik Bileşenler) emisyonları daha düşüktür. Bu nedenle, çevre dostu bir boya seçeneği olarak kabul edilir.</string>
     <string name="farklirenk">4.Farklı Renk Seçenekleri</string>
     <string name="farklirenktanim">Toz boya, geniş bir renk yelpazesi sunar. Farklı pigmentlerin karışımıyla birçok renk tonu elde edilebilir.</string>
     <string name="dayaniklilik">5.Dayanıklılık ve Kaplama Kalitesi</string>
     <string name="dayanikliliktanim">Toz boya, genellikle dayanıklı bir kaplama sağlar ve metal yüzeylere iyi bir koruma sağlar. Ayrıca, pürüzsüz ve homojen bir yüzey kaplaması elde etmek için eğilimlidir.</string>
+    <string name="renktanimlama">Renk Tanımlama</string>
+    <string name="fiyatsorgulama">Fiyat Sorgulama</string>
+    <string name="renkuzayi">Renk Uzayı</string>
+    <string name="boyahatalarivecozumleri">Boya Hataları ve Çözümleri</string>
+    <string name="geridonusum">Geri Dönüşüm</string>
+    <string name="kullanicigeribildirim">Kullanıcı Geri Bildirim</string>
+    <string name="bilgilendirme">Bilgilendirme</string>
+    <string name="giris">Firmamızda kaplama hizmeti için fiyat bilgisi almanın en hızlı ve kolay yolunu kullanın. Burada talep konusunda adım adım yönlendirileceksiniz, talebi girerken destekleneceksiniz ve talebinizle ilgili faydalı ipuçları ve bilgiler sunulacak. Şimdi dene!</string>
+    <string name="birinciadim">1- Şekli seçin</string>
+    <string name="birincibilgi">Parçanızın şekline en yakın şekli seçin. Alternatif olarak metin alanında terimleri arayabilirsiniz.</string>
+    <string name="ikinciciadim">2- Ürün hakkında bilgi verin</string>
+    <string name="ikincibilgi">Nesne hakkında mümkün olduğunca fazla bilgiyi bizimle paylaşın. Bu önemlidir, böylece özellikle sizin için hassas bir hesaplama yapabiliriz. Buradaki kural şudur: ne kadar kesin olursa o kadar iyi! Ayrıca eskizler gibi dosyaları da yükleyin, PDF\'ler, 3D Dosyalar veya bir fotoğraf isteğinizi daha iyi anlamamıza yardımcı oluyor</string>
+    <string name="ucuncuadim">3- Renk ve teslimat ayrıntılarını belirtin</string>
+    <string name="ucuncubilgi">Renk, yüzey, uygulama alanı ve istenilen tarih seçimi de fiyatı etkiliyor.</string>
+    <string name="dorduncuadim">4- Hemen teklif gönderin ve teklif alın!</string>
+    <string name="dorduncubilgi">Gönderdikten sonra özeti içeren ve çıktısı da alınabilen bir e-posta alacaksınız! Bilgileriniz açıksa bizden hemen bir teklif alacaksınız. Herhangi bir sorunuz varsa veya daha fazla açıklamaya ihtiyaç duyarsak, sizinle derhal iletişime geçeceğiz</string>
+    <string name="tamam">Tamam</string>
+    <string name="filtrele">Parçaları Filtreleyin</string>
+    <string name="tumbolumler">Tüm Bölümler</string>
+    <string name="profiller">Profiller</string>
+    <string name="puruzsuz">Bükümlü parçalar</string>
+    <string name="korkuluk">Korkuluklar,çerçeveler,ızgaralar</string>
+    <string name="insaat">İnşaatlar ve çerçeveler</string>
+    <string name="hareketlilik">Haraketlilik</string>
+    <string name="urunBilgileri">Ürün Bilgileri</string>
+    <string name="kendiparcaadi">Ürün adı</string>
+    <string name="parcasayisi">Parça sayısı</string>
+    <string name="boyutlar">Boyutlar</string>
+    <string name="uzunluk">Uzunluk</string>
+    <string name="genislik">Genişlik</string>
+    <string name="yukseklik">Yükseklik</string>
+    <string name="malzemekalinligi">Malzeme Kalınlığı</string>
+    <string name="enbuyukmalzemekalinligi">En büyük malzeme kalınlığı</string>
+    <string name="malzeme">Malzeme</string>
+    <string name="alimunyum">alüminyum</string>
+    <string name="ealimunyum">Eloksallı alüminyum</string>
+    <string name="celik">Çelik</string>
+    <string name="fiyatihesapla">Fiyatı Hesapla</string>
+    <string name="musteriBilgileri">Müşteri Bilgisi</string>
+    <string name="dagitim">Teslim alma tarihi</string>
+    <string name="teslim">Teslim tarihi</string>
+    <string name="adi">Adınız</string>
+    <string name="soyadi">Soyadınız</string>
+    <string name="sirket">Şirket</string>
+    <string name="sokak">Sokak</string>
+    <string name="no">No</string>
+    <string name="postakodu">Posta Kodu</string>
+    <string name="konum">Konum</string>
+    <string name="email">Email Adresiniz</string>
+    <string name="tel">Telefon</string>
+    <string name="istekgonderin">İstek Gönderin</string>
+    <string name="app_name2">Toz Boya(Elektrostatik)</string>
+    <string name="onarilenFirmalar">Önerilen Firmalar</string>
+    <string name="agirlik">Ağırlık</string>
+    <string name="musterinotu">Müşteri Notu</string>
+    <string name="loginName">HOŞGELDİNİZ</string>
+    <array name="secim">
+        <item>@string/tumbolumler</item>
+        <item>@string/profiller</item>
+        <item>@string/puruzsuz</item>
+        <item>@string/korkuluk</item>
+        <item>@string/insaat</item>
+    </array>
+
 </resources>

@@ -92,7 +92,7 @@
                     android:layout_marginLeft="5dp"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
-                    android:text="@string/hesaplama"
+                    android:text="@string/fiyatsorgulama"
                     android:textSize="18dp"
                     android:fontFamily="@font/poppings"
                     android:layout_gravity="center"
@@ -168,6 +168,44 @@
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     android:text="@string/blog"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/poppings"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardOnarilenFirmalar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/linearlayoutOnarilenFirmalar"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:gravity="center"
+
+
+                >
+                <TextView
+                    android:id="@+id/txtOnarilenFirmalar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="@string/onarilenFirmalar"
                     android:textSize="18dp"
                     android:fontFamily="@font/poppings"
                     android:layout_gravity="center"
@@ -270,6 +308,22 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/ic_linkedin"
+                android:clickable="true"
+                android:onClick="onLinkedInClick"
+                />
+            <ImageView
+                android:id="@+id/whatsappIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_whatsapp"
+                android:clickable="true"
+                android:onClick="onLinkedInClick"
+                />
+            <ImageView
+                android:id="@+id/xingIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_xing"
                 android:clickable="true"
                 android:onClick="onLinkedInClick"
                 />

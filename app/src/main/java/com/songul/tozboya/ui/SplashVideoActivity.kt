@@ -20,7 +20,7 @@ class SplashVideoActivity : AppCompatActivity() {
         videoView.setVideoURI(uri)
 
         videoView.setOnCompletionListener {
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, SingInActivity::class.java))
             finish()
         }
 

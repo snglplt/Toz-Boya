@@ -13,6 +13,7 @@ import android.widget.ExpandableListView
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.cardview.widget.CardView
 import androidx.core.view.GravityCompat
@@ -42,24 +43,29 @@ class MainActivity : AppCompatActivity() {
     lateinit var linearRalKaldera:LinearLayout
     lateinit var linearHesaplama:LinearLayout
     lateinit var linearlayoutBizeUlasin:LinearLayout
+    lateinit var linearlayoutOnarilenFirmalar:LinearLayout
     lateinit var txtBlog:TextView
     lateinit var txtRalKaldera:TextView
     lateinit var txtHesaplama:TextView
+    lateinit var txtOnarilenFirmalar:TextView
     lateinit var txtBizeUlasin:TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         onBaslat()
         menuLeftIV!!.setOnClickListener(View.OnClickListener { drawerOpen() })
+        setUpNavigationView()
         cardBlog.setOnClickListener {
             linearRalKaldera.setBackgroundColor(Color.parseColor("#FFFFFF"))
             linearHesaplama.setBackgroundColor(Color.parseColor("#FFFFFF"))
             linearlayoutBizeUlasin.setBackgroundColor(Color.parseColor("#FFFFFF"))
-            linearlayoutBlog.setBackgroundColor(Color.parseColor("#FF6E40"))
+            linearlayoutOnarilenFirmalar.setBackgroundColor(Color.parseColor("#FFFFFF"))
+            linearlayoutBlog.setBackgroundColor(Color.parseColor("#058B8C"))
             txtBlog.setTextColor(Color.parseColor("#FFFFFF"))
-            txtRalKaldera.setTextColor(Color.parseColor("#FF6E40"))
-            txtHesaplama.setTextColor(Color.parseColor("#FF6E40"))
-            txtBizeUlasin.setTextColor(Color.parseColor("#FF6E40"))
+            txtRalKaldera.setTextColor(Color.parseColor("#058B8C"))
+            txtHesaplama.setTextColor(Color.parseColor("#058B8C"))
+            txtBizeUlasin.setTextColor(Color.parseColor("#058B8C"))
+            txtOnarilenFirmalar.setTextColor(Color.parseColor("#058B8C"))
             val i=Intent(this,TozBoyaActivity::class.java)
             startActivity(i)
         }
@@ -67,35 +73,54 @@ class MainActivity : AppCompatActivity() {
             linearlayoutBlog.setBackgroundColor(Color.parseColor("#FFFFFF"))
             linearHesaplama.setBackgroundColor(Color.parseColor("#FFFFFF"))
             linearlayoutBizeUlasin.setBackgroundColor(Color.parseColor("#FFFFFF"))
-            linearRalKaldera.setBackgroundColor(Color.parseColor("#FF6E40"))
+            linearlayoutOnarilenFirmalar.setBackgroundColor(Color.parseColor("#FFFFFF"))
+            linearRalKaldera.setBackgroundColor(Color.parseColor("#058B8C"))
             txtRalKaldera.setTextColor(Color.WHITE)
-            txtBlog.setTextColor(Color.parseColor("#FF6E40"))
-            txtHesaplama.setTextColor(Color.parseColor("#FF6E40"))
-            txtBizeUlasin.setTextColor(Color.parseColor("#FF6E40"))
+            txtBlog.setTextColor(Color.parseColor("#058B8C"))
+            txtHesaplama.setTextColor(Color.parseColor("#058B8C"))
+            txtBizeUlasin.setTextColor(Color.parseColor("#058B8C"))
+            txtOnarilenFirmalar.setTextColor(Color.parseColor("#058B8C"))
             val i=Intent(this,RalActivity::class.java)
             startActivity(i)
         }
         cardHesaplama.setOnClickListener {
             linearlayoutBlog.setBackgroundColor(Color.parseColor("#FFFFFF"))
             linearRalKaldera.setBackgroundColor(Color.parseColor("#FFFFFF"))
+            linearlayoutOnarilenFirmalar.setBackgroundColor(Color.parseColor("#FFFFFF"))
             linearlayoutBizeUlasin.setBackgroundColor(Color.parseColor("#FFFFFF"))
-            linearHesaplama.setBackgroundColor(Color.parseColor("#FF6E40"))
+            linearHesaplama.setBackgroundColor(Color.parseColor("#058B8C"))
             txtHesaplama.setTextColor(Color.WHITE)
-            txtBlog.setTextColor(Color.parseColor("#FF6E40"))
-            txtRalKaldera.setTextColor(Color.parseColor("#FF6E40"))
-            txtBizeUlasin.setTextColor(Color.parseColor("#FF6E40"))
+            txtBlog.setTextColor(Color.parseColor("#058B8C"))
+            txtRalKaldera.setTextColor(Color.parseColor("#058B8C"))
+            txtBizeUlasin.setTextColor(Color.parseColor("#058B8C"))
+            txtOnarilenFirmalar.setTextColor(Color.parseColor("#058B8C"))
+            val i=Intent(this,FiyatSorgulamaActivity::class.java)
+            startActivity(i)
         }
         cardBizeUlasin.setOnClickListener {
             linearlayoutBlog.setBackgroundColor(Color.parseColor("#FFFFFF"))
             linearRalKaldera.setBackgroundColor(Color.parseColor("#FFFFFF"))
             linearHesaplama.setBackgroundColor(Color.parseColor("#FFFFFF"))
-            linearlayoutBizeUlasin.setBackgroundColor(Color.parseColor("#FF6E40"))
+            linearlayoutOnarilenFirmalar.setBackgroundColor(Color.parseColor("#FFFFFF"))
+            linearlayoutBizeUlasin.setBackgroundColor(Color.parseColor("#058B8C"))
             txtBizeUlasin.setTextColor(Color.WHITE)
-            txtHesaplama.setTextColor(Color.parseColor("#FF6E40"))
-            txtBlog.setTextColor(Color.parseColor("#FF6E40"))
-            txtRalKaldera.setTextColor(Color.parseColor("#FF6E40"))
+            txtHesaplama.setTextColor(Color.parseColor("#058B8C"))
+            txtBlog.setTextColor(Color.parseColor("#058B8C"))
+            txtOnarilenFirmalar.setTextColor(Color.parseColor("#058B8C"))
+            txtRalKaldera.setTextColor(Color.parseColor("#058B8C"))
         }
-
+        linearlayoutOnarilenFirmalar.setOnClickListener {
+            linearlayoutOnarilenFirmalar.setBackgroundColor(Color.parseColor("#058B8C"))
+            linearlayoutBlog.setBackgroundColor(Color.parseColor("#FFFFFF"))
+            linearRalKaldera.setBackgroundColor(Color.parseColor("#FFFFFF"))
+            linearHesaplama.setBackgroundColor(Color.parseColor("#FFFFFF"))
+            linearlayoutBizeUlasin.setBackgroundColor(Color.parseColor("#FFFFFF"))
+            txtOnarilenFirmalar.setTextColor(Color.WHITE)
+            txtBizeUlasin.setTextColor(Color.parseColor("#058B8C"))
+            txtHesaplama.setTextColor(Color.parseColor("#058B8C"))
+            txtBlog.setTextColor(Color.parseColor("#058B8C"))
+            txtRalKaldera.setTextColor(Color.parseColor("#058B8C"))
+        }
         val menu = navigationView!!.menu
         expandableList =
             findViewById<View>(R.id.navigationmenu) as ExpandableListView
@@ -126,6 +151,24 @@ class MainActivity : AppCompatActivity() {
         generateMenuData(intent)
 
     }
+    private fun setUpNavigationView() {
+        navigationView!!.setNavigationItemSelectedListener { menuItem ->
+            val fragmentTransaction = supportFragmentManager.beginTransaction()
+            fragmentTransaction.setCustomAnimations(
+                android.R.anim.fade_in,
+                android.R.anim.fade_out
+            )
+            fragmentTransaction.commitAllowingStateLoss()
+            //drawer!!.closeDrawers()
+            if (menuItem.isChecked) {
+                menuItem.isChecked = false
+            } else {
+                menuItem.isChecked = true
+            }
+            menuItem.isChecked = true
+            true
+        }
+    }
 
     private fun onBaslat() {
         navigationView = findViewById<View>(R.id.navigationview) as NavigationView
@@ -139,10 +182,12 @@ class MainActivity : AppCompatActivity() {
         linearlayoutBlog = findViewById(R.id.linearlayoutBlog)
         linearRalKaldera = findViewById(R.id.linearRalKaldera)
         linearHesaplama = findViewById(R.id.linearHesaplama)
+        linearlayoutOnarilenFirmalar = findViewById(R.id.linearlayoutOnarilenFirmalar)
         linearlayoutBizeUlasin = findViewById(R.id.linearlayoutBizeUlasin)
         txtBlog = findViewById(R.id.txtBlog)
         txtRalKaldera = findViewById(R.id.txtRalKaldera)
         txtHesaplama = findViewById(R.id.txtHesaplama)
+        txtOnarilenFirmalar = findViewById(R.id.txtOnarilenFirmalar)
         txtBizeUlasin = findViewById(R.id.txtBizeUlasin)
         txtad_soyad!!.setText("TOZ BOYA")
     }
@@ -156,26 +201,38 @@ class MainActivity : AppCompatActivity() {
         val item4 = ExpandedMenuModel()
         val item5 = ExpandedMenuModel()
         val item6 = ExpandedMenuModel()
+        val item7 = ExpandedMenuModel()
+        val item8 = ExpandedMenuModel()
 
 
-        item1.setIconName(getString(R.string.hesaplama))
-        item1.setIconImg(R.drawable.hesaplama)
-        item2.setIconName(getString(R.string.ralkartelasi))
-        item2.setIconImg(R.drawable.ral)
-        item3.setIconName(getString(R.string.blog))
-        item3.setIconImg(R.drawable.blog)
-        item4.setIconName(getString(R.string.bizeulasin))
-        item4.setIconImg(R.drawable.contact)
-        item5.setIconName(getString(R.string.geribildirim))
-        item5.setIconImg(R.drawable.geri_bildirim)
-        item6.setIconName(getString(R.string.logout))
-        item6.setIconImg(R.drawable.logout)
+
+        item1.setIconName(getString(R.string.ralkartelasi))
+        item1.setIconImg(R.drawable.ral)
+        item2.setIconName(getString(R.string.renktanimlama))
+        item2.setIconImg(R.drawable.blog)
+        item3.setIconName(getString(R.string.fiyatsorgulama))
+        item3.setIconImg(R.drawable.hesaplama)
+        item4.setIconName(getString(R.string.renkuzayi))
+        item4.setIconImg(R.drawable.baseline_invert_colors_24)
+        item5.setIconName(getString(R.string.geridonusum))
+        item5.setIconImg(R.drawable.baseline_recycling_24)
+        item6.setIconName(getString(R.string.boyahatalarivecozumleri))
+        item6.setIconImg(R.drawable.error)
+        item7.setIconName(getString(R.string.kullanicigeribildirim))
+        item7.setIconImg(R.drawable.geri_bildirim)
+        item8.setIconName(getString(R.string.logout))
+        item8.setIconImg(R.drawable.logout)
+        val heading1: MutableList<String> = ArrayList()
+        heading1.add(getString(R.string.hesaplama))
         (listDataHeader as ArrayList<ExpandedMenuModel>).add(item1)
         (listDataHeader as ArrayList<ExpandedMenuModel>).add(item2)
         (listDataHeader as ArrayList<ExpandedMenuModel>).add(item3)
         (listDataHeader as ArrayList<ExpandedMenuModel>).add(item4)
         (listDataHeader as ArrayList<ExpandedMenuModel>).add(item5)
         (listDataHeader as ArrayList<ExpandedMenuModel>).add(item6)
+        (listDataHeader as ArrayList<ExpandedMenuModel>).add(item7)
+        (listDataHeader as ArrayList<ExpandedMenuModel>).add(item8)
+        listDataChild!!.put((listDataHeader as ArrayList<ExpandedMenuModel>).get(2), heading1)
 
 
     onMenuGoster(listDataHeader as ArrayList<ExpandedMenuModel>, listDataChild!!)
@@ -190,13 +247,13 @@ class MainActivity : AppCompatActivity() {
         )
         // Toast.makeText(this,listDataHeader.toString(),Toast.LENGTH_LONG).show()
         expandableList!!.setAdapter(mMenuAdapterYedekExpandableListAdapter)
-        expandableList!!.setAdapter(mMenuAdapterYedekExpandableListAdapter)
+
         expandableList!!.setOnGroupClickListener { expandableListView, view, groupPosition, l ->
             val groupName = mMenuAdapterYedekExpandableListAdapter!!.getGroupName(groupPosition)
-            //Toast.makeText(this,"this:"+groupName,Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "this:" + groupName, Toast.LENGTH_LONG).show()
 
             when (groupName) {
-                getString(R.string.logout) -> {
+                getString(R.string.fiyatsorgulama) -> {
                     val builder = AlertDialog.Builder(this)
 
                     builder
@@ -210,24 +267,25 @@ class MainActivity : AppCompatActivity() {
 
                     val dialog = builder.create()
                     dialog.show()
-                     true
+                    true // Grup tıklamasının işlendiğini belirtmek için true dön
                 }
                 getString(R.string.ralkartelasi) -> {
                     val i=Intent(this,RalActivity::class.java)
                     startActivity(i)
-                     true
+                    true // Grup tıklamasının işlendiğini belirtmek için true dön
                 }
-
-
+                else -> false // Diğer durumlarda false dön
             }
-
-
-            false
+            true
         }
         expandableList!!.setOnChildClickListener { parent, v, groupPosition, childPosition, id -> //Nothing here ever fires
             val groupName = mMenuAdapterYedekExpandableListAdapter!!.getGroup(groupPosition)
             val childName =
                 mMenuAdapterYedekExpandableListAdapter!!.getChild(groupPosition, childPosition)
+            if (childName==getString(R.string.geridonusum)) {
+                val i = Intent(this, FiyatSorgulamaActivity::class.java)
+                startActivity(i)
+            }
             true
         }
     }
